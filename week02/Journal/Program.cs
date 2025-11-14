@@ -1,9 +1,13 @@
-using System;
-
-class Program
+namespace Journal
 {
-    static void Main(string[] args)
+    class Program
     {
-        Console.WriteLine("Hello World! This is the Journal Project.");
+        static void Main(string[] args)
+        {
+            Journal j = new();
+            j.CreateEntry();
+
+            j.DisplayAll();
+        }
     }
 }
